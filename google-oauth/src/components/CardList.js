@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Card from './Card';
+import './styles.css';
 
-class CardList extends React.Component {
+class CardList extends Component {
   render() {
-    // console.log(this.getInfo.name);
-    // let c = this.props.info.feed.entry;
     const res = this.props.info.feed.entry.map((member) => {
       return (
         <Card
           key={member.id.$t}
           name={member.title.$t}
-          email={member.email || null}
+          // email={member.email || null}
           number={member.gd$phoneNumber ? member.gd$phoneNumber[0].$t : null}
         />
       );
     });
-    return res;
+    return (
+      <table className='table highlight'>
+        <tr>
+          <th>Name</th>
+          <th>Number</th>
+        </tr>
+        {res}
+      </table>
+    );
   }
 }
 

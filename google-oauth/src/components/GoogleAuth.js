@@ -108,7 +108,11 @@ class GoogleAuth extends Component {
   render() {
     if (this.state.people != null) return <CardList info={this.state.people} />;
     else {
-      return <button onClick={this.handleClick}>SignIn</button>;
+      return (
+        <button onClick={this.handleClick} className='sign-in btn'>
+          Sign In With Google
+        </button>
+      );
     }
   }
 }
