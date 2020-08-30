@@ -1,28 +1,12 @@
-import React, { Component } from 'react';
-import './styles.css';
-
-class Card extends Component {
+import React from 'react';
+// import './Card.css';
+class Card extends React.Component {
   render() {
     return (
-      <div id='item'>
-        <div class='row'>
-          <div class='col l12'>
-            <div class='card white'>
-              <div class='card-content white-text'>
-                <span class='card-title'>
-                  <b>Sign In With Google</b>
-                </span>
-                <input type='text' placeholder='Email' />
-                <input type='password' placeholder='Password' />
-              </div>
-              <div class='card-action'>
-                <a href='#' class='btn'>
-                  Sign In
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className='card'>
+        <div>{this.props.name}</div>
+        <div>{this.props.email}</div>
+        <div>{this.props.number}</div>
       </div>
     );
   }
