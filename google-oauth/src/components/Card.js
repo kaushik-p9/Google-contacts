@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 class Card extends Component {
   render() {
-    return (
-      <tr className='highlight'>
-        <td>{this.props.name}</td>
-        {/* <td>{this.props.email}</td> */}
-        <td>{this.props.number}</td>
-        <td>
-          <a href='#' class='delete'>
-            X
-          </a>
-        </td>
-      </tr>
-    );
+    if (this.props.name) {
+      return (
+        <tr className='highlight'>
+          <td style={{ padding: '10px' }}>
+            <i class='fa fa-square-o' aria-hidden='true'></i>
+            &nbsp;&nbsp;
+            {this.props.name}
+          </td>
+          {/* <td>{this.props.email}</td> */}
+          <td style={{ padding: '10px' }}>{this.props.number}</td>
+          <td style={{ padding: '10px' }}>
+            <i class='fa fa-trash-o small' aria-hidden='true'></i>
+          </td>
+        </tr>
+      );
+    } else {
+      return [];
+    }
   }
 }
 {

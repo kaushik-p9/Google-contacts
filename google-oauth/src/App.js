@@ -4,6 +4,7 @@ import './components/styles.css';
 import Box from './components/Box';
 import GoogleAuth from './components/GoogleAuth';
 import axios from 'axios';
+import Navbar from './components/Navbar';
 
 class App extends Component {
   // componentDidMount() {
@@ -15,8 +16,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className='App' style={{ backgroundColor: 'blue lighten-4' }}>
+      <div>
+        <Navbar />
         <GoogleAuth />
+
         {/* <Box /> */}
       </div>
     );

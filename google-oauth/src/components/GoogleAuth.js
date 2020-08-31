@@ -63,6 +63,7 @@
 // }
 
 // export default GoogleAuth;
+// 252669349047-sslescsn58s9ojlifuov3o0303v934qr.apps.googleusercontent.com
 import React, { Component } from 'react';
 import axios from 'axios';
 import CardList from './CardList';
@@ -70,6 +71,7 @@ class GoogleAuth extends Component {
   state = {
     people: null,
   };
+
   handleClick = (event) => {
     event.preventDefault();
     window.gapi.load('client:auth2', () => {
@@ -109,8 +111,10 @@ class GoogleAuth extends Component {
     if (this.state.people != null) return <CardList info={this.state.people} />;
     else {
       return (
-        <button onClick={this.handleClick} className='sign-in btn'>
-          Sign In With Google
+        <button onClick={this.handleClick} className='sign-in'>
+          {/* src='../../public/google_icon.png' */}
+          <i class='fa fa-google small' aria-hidden='true'></i>
+          &nbsp; Sign in with Google
         </button>
       );
     }

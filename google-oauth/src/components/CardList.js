@@ -15,10 +15,10 @@ class CardList extends Component {
       );
     });
     return (
-      <table className='table highlight'>
+      <table className='table scroll'>
         <tr>
-          <th>Name</th>
-          <th>Number</th>
+          <th>NAME</th>
+          <th>PHONE NUMBER</th>
         </tr>
         {res}
       </table>
