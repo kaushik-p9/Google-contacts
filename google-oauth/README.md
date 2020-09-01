@@ -7,3 +7,6 @@ In the project directory, you can run:
 ### `npm start`
 
 To spin up the webapp locally
+
+Link to the hosted web app on firebase:
+https://g-contacts-d21fc.web.app/
