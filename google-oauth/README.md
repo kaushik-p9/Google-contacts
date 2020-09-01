@@ -15,4 +15,4 @@ The Login Page:
 ![](https://github.com/kaushik-p9/Google-contacts/blob/master/google-oauth/public/login%20page.PNG)
 
 Contacts Page:
-https://github.com/kaushik-p9/Google-contacts/blob/master/google-oauth/public/contacts.PNG
+![](https://github.com/kaushik-p9/Google-contacts/blob/master/google-oauth/public/contacts.PNG)
