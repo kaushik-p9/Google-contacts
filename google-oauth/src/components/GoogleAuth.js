@@ -108,11 +108,12 @@ class GoogleAuth extends Component {
   };
 
   render() {
-    if (this.state.people != null) return <CardList info={this.state.people} />;
-    else {
+    if (this.state.people != null) {
+      // this.props.login(true);
+      return <CardList info={this.state.people} />;
+    } else {
       return (
         <button onClick={this.handleClick} className='sign-in'>
-          {/* src='../../public/google_icon.png' */}
           <i class='fa fa-google small' aria-hidden='true'></i>
           &nbsp; Sign in with Google
         </button>

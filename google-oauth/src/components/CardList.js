@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card';
-import './styles.css';
+import './styles.scss';
 
 class CardList extends Component {
   render() {
@@ -9,15 +9,16 @@ class CardList extends Component {
         <Card
           key={member.id.$t}
           name={member.title.$t}
-          // email={member.email || null}
+          email={member.gd$email ? member.gd$email[0].address : 'Not available'}
           number={member.gd$phoneNumber ? member.gd$phoneNumber[0].$t : null}
         />
       );
     });
     return (
-      <table className='table scroll'>
+      <table className='table table-responsive scroll'>
         <tr>
           <th>NAME</th>
+          <th>EMAIL</th>
           <th>PHONE NUMBER</th>
         </tr>
         {res}

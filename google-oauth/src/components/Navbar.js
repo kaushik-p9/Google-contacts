@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-import './styles.css';
+import './styles.scss';
 
 export class Navbar extends Component {
   render() {
+    console.log(this.props.info);
     return (
-      <nav className='navbar blue darken-3 push-right'>
-        <h1>
+      <nav className='navbar'>
+        {/* <div>{this.props.info.feed.author[0].name.$t}</div>
+         */}
+        <div>
           <i
             class='fa small fa-arrow-circle-o-right push-right'
             aria-hidden='true'
           />
-        </h1>
+        </div>
       </nav>
     );
   }

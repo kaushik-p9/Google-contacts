@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles.css';
+import './styles.scss';
 import GoogleAuth from './GoogleAuth';
 
 class Box extends Component {
