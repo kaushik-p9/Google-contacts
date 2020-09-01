@@ -13,6 +13,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        {/* <Box /> */}
         <Navbar />
         <GoogleAuth />
       </div>

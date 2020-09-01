@@ -3,7 +3,6 @@ import './styles.scss';
 
 export class Navbar extends Component {
   render() {
-    console.log(this.props.info);
     return (
       <nav className='navbar'>
         {/* <div>{this.props.info.feed.author[0].name.$t}</div>
